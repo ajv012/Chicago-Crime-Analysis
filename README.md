@@ -16,7 +16,16 @@ trees and heaps. Finally, we also use google maps to create a heat map of the cr
 	* No 911 call is made and no backlog of dispatches. A general dispatch is sent based on areas of high risk (stored in an   AVL tree)
 3. Phase 3: This phase involved doing background readings on racial bias in police and assigning priorities to crime and location in a socially cognizant way. 
 
-Main data structures used: Queues, Priority queues, BST, AVL trees, heaps
+Here's what the different files do:
+
+1. ChicagoCrime_CAN.py: This is the main driver. It loads data, creates the required trees, reads in 911 calls, and sends dispatches
+2. Priority_CAN.py: module to assign priority to crime and location of crime
+3. Crime_priority_metalist_CAN.py: This module creates the heaps that store the overall priority for crimes and locations. This list is to be used for scenario 3.
+4. Heap_sort_CAN.py: Implementation of heap sort
+5. Heatmap_CAN.py: creates a heat map that shows the crime density in the city of chicago
+6. Visulization_CAN.py: Used Bridges API to create the visualizations of trees and heaps
+7. arrest_CAN.py: Shows how the arrest rates for a specific crime vary with location
+8. ChicagoCrimeTest.py: Module to test the Chicago Crime Analysis class.
 
 For more details, continue reading ahead. 
 
